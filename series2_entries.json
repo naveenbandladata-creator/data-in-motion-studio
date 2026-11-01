@@ -1,0 +1,242 @@
+[
+ {
+  "ep": "31",
+  "series": "Spark UI in Motion",
+  "series_ep": 1,
+  "title": "Where Does the Spark UI Live?",
+  "covers": "port 4040, second app on 4041, cluster page 8080, Environment tab",
+  "lab": "labs/ep01_where_is_the_ui.py",
+  "date": "2026-11-30",
+  "status": "draft"
+ },
+ {
+  "ep": "32",
+  "series": "Spark UI in Motion",
+  "series_ep": 2,
+  "title": "The Jobs Tab: One Action Isn't One Job",
+  "covers": "actions creating 2-3 jobs, job descriptions, setJobDescription",
+  "lab": "labs/ep02_one_action_many_jobs.py",
+  "date": "2026-12-01",
+  "status": "draft"
+ },
+ {
+  "ep": "33",
+  "series": "Spark UI in Motion",
+  "series_ep": 3,
+  "title": "The Stages Tab: Where Jobs Split",
+  "covers": "stage boundaries at shuffles, shuffle write vs read, 1/2/4-stage queries",
+  "lab": "labs/ep03_where_stages_split.py",
+  "date": "2026-12-02",
+  "status": "draft"
+ },
+ {
+  "ep": "34",
+  "series": "Spark UI in Motion",
+  "series_ep": 4,
+  "title": "Reading the DAG",
+  "covers": "DAG visualization, SQL graph, Exchange, WholeStageCodegen",
+  "lab": "labs/ep04_read_the_dag.py",
+  "date": "2026-12-03",
+  "status": "draft"
+ },
+ {
+  "ep": "35",
+  "series": "Spark UI in Motion",
+  "series_ep": 5,
+  "title": "The Event Timeline: Spot Idle Executors",
+  "covers": "job bars, executors added, gaps from driver-side Python and toPandas",
+  "lab": "labs/ep05_timeline_gaps.py",
+  "date": "2026-12-04",
+  "status": "draft"
+ },
+ {
+  "ep": "36",
+  "series": "Spark UI in Motion",
+  "series_ep": 6,
+  "title": "Spot the Problem #1",
+  "covers": "exercise: 40 jobs for one report, debug counts in a loop",
+  "lab": "labs/ep06_spot_the_problem_1.py",
+  "date": "2026-12-05",
+  "status": "draft"
+ },
+ {
+  "ep": "37",
+  "series": "Spark UI in Motion",
+  "series_ep": 7,
+  "title": "Summary Metrics: Max vs Median",
+  "covers": "min/25/median/75/max table, skewed task reading 31x the median",
+  "lab": "labs/ep07_summary_metrics.py",
+  "date": "2026-12-06",
+  "status": "draft"
+ },
+ {
+  "ep": "38",
+  "series": "Spark UI in Motion",
+  "series_ep": 8,
+  "title": "The Task Timeline: Where Each Second Goes",
+  "covers": "scheduler delay, deserialization, compute, GC, Show Additional Metrics",
+  "lab": "labs/ep08_task_timeline.py",
+  "date": "2026-12-07",
+  "status": "draft"
+ },
+ {
+  "ep": "39",
+  "series": "Spark UI in Motion",
+  "series_ep": 9,
+  "title": "Shuffle Read and Shuffle Write",
+  "covers": "how much data moved, records vs bytes, shuffle size per task",
+  "lab": "labs/ep09_shuffle_read_write.py",
+  "date": "2026-12-08",
+  "status": "draft"
+ },
+ {
+  "ep": "40",
+  "series": "Spark UI in Motion",
+  "series_ep": 10,
+  "title": "Spill: Memory vs Disk",
+  "covers": "Spill (Memory), Spill (Disk), why sorts and joins spill, fixes",
+  "lab": "labs/ep10_spill.py",
+  "date": "2026-12-09",
+  "status": "draft"
+ },
+ {
+  "ep": "41",
+  "series": "Spark UI in Motion",
+  "series_ep": 11,
+  "title": "The Executors Tab",
+  "covers": "cores, memory, GC time, failed tasks, lost executor and task retry",
+  "lab": "labs/ep11_executors.py",
+  "date": "2026-12-10",
+  "status": "draft"
+ },
+ {
+  "ep": "42",
+  "series": "Spark UI in Motion",
+  "series_ep": 12,
+  "title": "Spot the Problem #2",
+  "covers": "exercise: stage-level diagnosis",
+  "lab": "labs/ep12_spot_the_problem_2.py",
+  "date": "2026-12-11",
+  "status": "draft"
+ },
+ {
+  "ep": "43",
+  "series": "Spark UI in Motion",
+  "series_ep": 13,
+  "title": "The SQL Tab: Follow the Rows",
+  "covers": "query graph, number of output rows per node, row explosions",
+  "lab": "labs/ep13_sql_follow_the_rows.py",
+  "date": "2026-12-12",
+  "status": "draft"
+ },
+ {
+  "ep": "44",
+  "series": "Spark UI in Motion",
+  "series_ep": 14,
+  "title": "Which Join Did Spark Pick?",
+  "covers": "BroadcastHashJoin vs SortMergeJoin in the graph, side by side",
+  "lab": "labs/ep14_which_join.py",
+  "date": "2026-12-13",
+  "status": "draft"
+ },
+ {
+  "ep": "45",
+  "series": "Spark UI in Motion",
+  "series_ep": 15,
+  "title": "The Scan Node: Did Spark Skip Data?",
+  "covers": "files read, partitions read, pushed filters, size of files read",
+  "lab": "labs/ep15_scan_node.py",
+  "date": "2026-12-14",
+  "status": "draft"
+ },
+ {
+  "ep": "46",
+  "series": "Spark UI in Motion",
+  "series_ep": 16,
+  "title": "AQE in the UI",
+  "covers": "plan changing at runtime, isFinalPlan, AQEShuffleRead, coalesced partitions",
+  "lab": "labs/ep16_aqe.py",
+  "date": "2026-12-15",
+  "status": "draft"
+ },
+ {
+  "ep": "47",
+  "series": "Spark UI in Motion",
+  "series_ep": 17,
+  "title": "Storage Tab: Is Your Cache Used?",
+  "covers": "fraction cached, InMemoryTableScan, a cache that never ran",
+  "lab": "labs/ep17_storage_cache.py",
+  "date": "2026-12-16",
+  "status": "draft"
+ },
+ {
+  "ep": "48",
+  "series": "Spark UI in Motion",
+  "series_ep": 18,
+  "title": "Spot the Problem #3",
+  "covers": "exercise: SQL-tab diagnosis",
+  "lab": "labs/ep18_spot_the_problem_3.py",
+  "date": "2026-12-17",
+  "status": "draft"
+ },
+ {
+  "ep": "49",
+  "series": "Spark UI in Motion",
+  "series_ep": 19,
+  "title": "Data Skew: Find It, Fix It",
+  "covers": "why groupBy hides skew, joins reveal it, salting, AQE skew join",
+  "lab": "labs/ep19_skew_fix.py",
+  "date": "2026-12-18",
+  "status": "draft"
+ },
+ {
+  "ep": "50",
+  "series": "Spark UI in Motion",
+  "series_ep": 20,
+  "title": "Too Many or Too Few Partitions",
+  "covers": "thousands of tiny tasks vs two huge ones, choosing a count",
+  "lab": "labs/ep20_partition_count.py",
+  "date": "2026-12-19",
+  "status": "draft"
+ },
+ {
+  "ep": "51",
+  "series": "Spark UI in Motion",
+  "series_ep": 21,
+  "title": "The Python UDF Cost",
+  "covers": "BatchEvalPython vs built-in functions, same result timed",
+  "lab": "labs/ep21_python_udf_cost.py",
+  "date": "2026-12-20",
+  "status": "draft"
+ },
+ {
+  "ep": "52",
+  "series": "Spark UI in Motion",
+  "series_ep": 22,
+  "title": "Driver Bottlenecks and collect()",
+  "covers": "idle executors, timeline gaps, driver out-of-memory",
+  "lab": "labs/ep22_driver_bottleneck.py",
+  "date": "2026-12-21",
+  "status": "draft"
+ },
+ {
+  "ep": "53",
+  "series": "Spark UI in Motion",
+  "series_ep": 23,
+  "title": "Case Study: One Slow Job, Three Fixes",
+  "covers": "end-to-end diagnosis, before and after screens",
+  "lab": "labs/ep23_case_study.py",
+  "date": "2026-12-22",
+  "status": "draft"
+ },
+ {
+  "ep": "54",
+  "series": "Spark UI in Motion",
+  "series_ep": 24,
+  "title": "Final Exam: Read Any Spark UI",
+  "covers": "three unseen screens, the 5-minute checklist",
+  "lab": "labs/ep24_final_exam.py",
+  "date": "2026-12-23",
+  "status": "draft"
+ }
+]
