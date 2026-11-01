@@ -138,14 +138,15 @@ Every episode teaches with the REAL Spark UI from a REAL job, never invented scr
 - Thumbnail: a real screenshot fragment (blurred/zoomed) + 3-line hook text + "DATA IN MOTION". Never the Apache Spark logo.
 
 ## Lab repo (companion for viewers)
-https://github.com/naveenbandladata-creator/spark-ui-labs (PRIVATE until UI 01 is approved; Naveen flips it public).
+https://github.com/naveenbandladata-creator/spark-ui-labs (public since 2026-11-01).
 - labs/common.py fixes the cluster settings (2 executors x 1 core x 512m, shuffle partitions 8, Spark 4.0.1). Never change them
   without re-capturing every published lab.
 - One lab per episode: labs/epNN_<topic>.py (NN = series_ep). Docstring = what to open + "Your turn" questions.
   Exercise episodes (6, 12, 18, 24) are labs/epNN_spot_the_problem_K.py with answers/epNN.md.
 - All 24 labs exist and were tested on 2026-11-01. Adjust a lab only if the episode needs it: re-run, check the UI still shows the
   lesson CLEARLY (look at the screenshots), push. If a lesson stops showing, change the lab, not the story.
-- Push the lab (and README table row) BEFORE uploading the video:
+- All 24 labs are already pushed. Only if you changed a lab AND GH_TOKEN is set, push it before uploading; if GH_TOKEN is
+  not set, skip the push and list the changed lab in the review message so Naveen knows:
   git -C labs-repo -c http.extraHeader="Authorization: Basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push
   Never write the token into files, remotes or git config.
 
@@ -200,5 +201,4 @@ Description: what you'll learn, "Lab: https://github.com/naveenbandladata-creato
 ## Approval differences
 Same gate as Series 1. Extra on approval of UI 01 (series_ep 1) only:
   python3 youtube.py playlist-privacy PLeclC2DCNwhM public
-  and remind Naveen in the reply to make the GitHub repo spark-ui-labs public (Settings > General > Change visibility).
 LinkedIn post: "🎬 Spark UI in Motion, Episode N: <title>" + hook + "→ " lines + "🧪 Try it yourself: <lab link>" + watch line.

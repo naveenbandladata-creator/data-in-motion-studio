@@ -1,7 +1,7 @@
 # Apply the Series 2 foundation to the hub (one time)
 
 Run ONCE by the daily task (step 0 of its prompt) when the hub has no studio/capture.py.txt.
-Source: this private repo, naveenbandladata-creator/data-in-motion-studio.
+Source: the public repo naveenbandladata-creator/data-in-motion-studio (no secrets in it).
 Hub: https://claude.ai/artifact/16834BCsBpb7k6WvQb1cto
 
 1. Read the hub (status.json and the studio files).
